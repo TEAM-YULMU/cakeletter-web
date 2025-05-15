@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo '린트 체크'
+npm run lint
+npm run lint:fix
+npx lint-staged
