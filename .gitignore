@@ -1,4 +1,4 @@
-# Logs
+# 로그 파일
 logs
 *.log
 npm-debug.log*
@@ -7,21 +7,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Yarn 관련
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn/cache/
+.yarn/install-state.gz
+
+# node_modules, 빌드 산출물
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# 환경 변수
+.env
+.env.*
+
+# IDE 관련
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-.env
-.env.*
